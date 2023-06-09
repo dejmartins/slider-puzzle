@@ -1,3 +1,8 @@
+<template>
+    <div>
+        <h1>Swap the Images to Win</h1>
+    </div>
+</template>
 <script>
     import moment from "moment";
 
