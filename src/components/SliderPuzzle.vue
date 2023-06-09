@@ -1,6 +1,19 @@
 <template>
     <div>
         <h1>Swap the Images to Win</h1>
+        <button @click="start" id="start-button">Start Game</button>
+        <button @click="stop" id="quit-button">Quit</button>
+        <p>Elapsed Time: {{ elapsedTime }}</p>
+        <p v-if="isWinning">You Win</p>
+        <div class="row">
+            <div class="column" 
+            v-for="(s, index) of shuffledPuzzleArray"
+            :key="s"
+            @click="swap(index)"
+            >
+                <img :src="require(`../assets/cars/${puzzleId}/${s}`)"/>
+            </div>
+        </div>
     </div>
 </template>
 <script>
