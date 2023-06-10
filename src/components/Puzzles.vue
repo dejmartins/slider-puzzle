@@ -18,17 +18,17 @@
             return{
                 puzzles: [
                     {
-                        id: "hyundai-charge",
+                        id: "hyundaicharge",
                         image: "hyundaicharge.jpg",
                         title: "Hyundai Charge"
                     }, 
                     {
-                        id: "hyundai-forest",
+                        id: "hyundaiforest",
                         image: "hyundaiforest.jpg",
                         title: "Hyundai Forest"
                     }, 
                     {
-                        id: "red-charlie",
+                        id: "redcharlie",
                         image: "redcharlie.jpg",
                         title: "Red Charlie"
                     }, 

@@ -128,7 +128,7 @@
 <style>
     .row {
         display: flex;
-        max-width: 90vw;
+        max-width: 100vw;
         flex-wrap: wrap;
     }
 
