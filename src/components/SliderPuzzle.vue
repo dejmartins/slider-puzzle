@@ -125,3 +125,19 @@
         }
     }
 </script>
+<style>
+    .row {
+        display: flex;
+        max-width: 90vw;
+        flex-wrap: wrap;
+    }
+
+    .column {
+        flex-grow: 1;
+        width: 33%;
+    }
+
+    .column img {
+        max-width: 100%;
+    }
+</style>
