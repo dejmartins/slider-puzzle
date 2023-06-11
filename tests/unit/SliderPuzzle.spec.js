@@ -24,6 +24,8 @@ describe("SliderPuzzle.vue", () => {
   });
 
   it("starts timer when start method is called", () => {
+    const setIntervalMock = jest.fn();
+    global.setInterval = setIntervalMock;
     const wrapper = mount(SliderPuzzle);
     wrapper.vm.start();
     expect(setInterval).toHaveBeenCalledTimes(1);
@@ -31,6 +33,8 @@ describe("SliderPuzzle.vue", () => {
   });
 
   it("stops timer when stop method is called", () => {
+    const clearIntervalMock = jest.fn();
+    global.clearInterval = clearIntervalMock;
     const wrapper = mount(SliderPuzzle);
     wrapper.vm.stop();
     expect(clearInterval).toHaveBeenCalledTimes(1);
@@ -55,12 +59,16 @@ describe("SliderPuzzle.vue", () => {
   });
 
   it("starts timer when Start button is clicked", () => {
+    const setIntervalMock = jest.fn();
+    global.setInterval = setIntervalMock;
     const wrapper = mount(SliderPuzzle);
     wrapper.get("#start-button").trigger("click");
     expect(setInterval).toHaveBeenCalledTimes(1);
   });
 
   it("stops timer when Quit button is clicked", () => {
+    const clearIntervalMock = jest.fn();
+    global.clearInterval = clearIntervalMock;
     const wrapper = mount(SliderPuzzle);
     wrapper.get("#quit-button").trigger("click");
     expect(clearInterval).toHaveBeenCalledTimes(1);

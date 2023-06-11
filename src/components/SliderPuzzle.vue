@@ -36,7 +36,7 @@
         props: {
             puzzleId: {
                 type: String,
-                default: "red-charlie"
+                default: "redcharlie"
             }
         },
         data(){
